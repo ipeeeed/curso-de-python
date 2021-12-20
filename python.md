@@ -27,3 +27,11 @@
     [2] **
     [3] *   /   //  %
     [4] +   -
+
+## Aula 4
+- Módulos
+    Para importar bibliotecas é só utilizar [import] e a biblioteca desejada, ou [from] >>> biblioteca >>> [import] >>> funcionalidade específica.
+
+## Aula 5
+- Strings
+    

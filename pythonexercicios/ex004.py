@@ -57,4 +57,18 @@ print('Para pintar essa parede, você precisará de {}l de tinta.'.format(Area*(
 
 n = float(input('Qual é o preço do produto? R$'))
 print('O produto custava R${:.2f}, na promoção com desconto de 5% vai custar R${:.2f}'.format(n, n-(n*5/100)))
+
+
+n = float(input('Qual é o salário do funcionário? R$'))
+print('Um funcionário qua ganhava R${:.2f}, com 15% de aumento, passa a receber R${:.2f}'.format(n, n+(n*15/100)))
+
+
+t = float(input('Informe a temperatura em C: '))
+print('A temperatura de {}C corresponde a {}F!'.format(t, 9*t/5+32))
+
+
+d = int(input('Quantos dias alugados? '))
+km = float(input('Quantos Km rodados? '))
+pago = (d*60) + (km*0.15)
+print('O valor a pagar é de R${:.2f}!'.format(pago))
 """
