@@ -34,7 +34,8 @@ print('A primeira letra A apareceu na posição {}.'.format(frase.find('a')+1))
 print('A última letra A apareceu na posição {}.'.format(frase.rfind('a')+1))
 '''
 
-nome = str(input('Digite seu nome completo: ')).split()
+n = str(input('Digite seu nome completo: ')).strip()
+nome = n.split()
 print('Muito prazer em te conhecer!')
 print('Seu primeiro nome é {}'.format(nome[0]))
-#print('Seu último nome é {}'.format(nome[0]))
+print('Seu último nome é {}'.format(nome[len(nome)-1]))

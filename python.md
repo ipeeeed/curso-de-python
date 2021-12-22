@@ -35,3 +35,6 @@
 ## Aula 5
 - Strings
     
+## Aula 6
+- Condições
+    Condições Simples, Compostas e Simplificadas
