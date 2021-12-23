@@ -38,3 +38,10 @@
 ## Aula 6
 - Condições
     Condições Simples, Compostas e Simplificadas
+    [if]
+    [else]
+    [and]
+    [or]
+
+## Aula 7
+- Cores no Terminal
