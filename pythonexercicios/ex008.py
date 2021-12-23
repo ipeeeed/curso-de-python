@@ -37,5 +37,52 @@ else:
     p = d * 0.45
 print('Você está prestes a começar uma viagem de {}Km'.format(d))
 print('E o preço da sua passagem será de R${:.2f}'.format(p))
-'''
 
+
+from datetime import date
+ano = int(input('Que ano quer analisar? Caso queira o ano atual, digite "0". '))
+if ano == 0:
+    ano = date.today().year
+if ano % 4 == 0 and ano % 100 != 0 or ano % 400 == 0:
+    print('O ano {} é BISSEXTO'.format(ano))
+else:
+    print('O ano {} NÃO é BISSEXTO'.format(ano))
+
+
+n1 = int(input('Primeiro valor: '))
+n2 = int(input('Segundo valor: '))
+n3 = int(input('Terceiro valor: '))
+if n1 > n2 and n1 > n3:
+    print('O maior valor digitado foi {}'.format(n1))
+if n2 > n1 and n2 > n3:
+    print('O maior valor digitado foi {}'.format(n2))
+if n3 > n1 and n3 > n2:
+    print('O maior valor digitado foi {}'.format(n3))
+
+if n1 < n2 and n1 < n3:
+    print('O menor valor digitado foi {}'.format(n1))
+if n2 < n1 and n2 < n3:
+    print('O menor valor digitado foi {}'.format(n2))
+if n3 < n1 and n3 < n2:
+    print('O menor valor digitado foi {}'.format(n3))
+
+
+sal = float(input('Qual é o salário do funcionário? R$'))
+if sal <= 1250:
+    aum = sal + (sal * 15 / 100)
+else:
+    aum = sal + (sal * 10 / 100)
+print('Quem ganhava R${:.2f} passa a ganhar R${:.2f} agora'.format(sal, aum))
+
+
+print('-='*20)
+print('Analisador de Triângulos')
+print('-='*20)
+n1 = float(input('Primeiro segmento: '))
+n2 = float(input('Segundo segmento: '))
+n3 = float(input('Terceiro segmento: '))
+if n1 < n2 + n3 and n2 < n1 + n3 and n3 < n1 + n2:
+    print('Os segmentos acima PODEM FORMAR triângulos')
+else:
+    print('Os segmentos acima NÃO PODEM FORMAR um triângulo')
+'''
