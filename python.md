@@ -1,5 +1,7 @@
 # Curso de Python
 ---
+    MUNDO 1
+---
 ## Aula 1
 - Variáveis e print
 - hashtag(#) transforma uma linha num comentário.
@@ -45,3 +47,10 @@
 
 ## Aula 7
 - Cores no Terminal
+---
+    MUNDO 2
+---
+## Aula 1
+- Condições Aninhadas
+    [elif] = else + if no python
+    [in] - ex: elif <nome> in 'Algo':
