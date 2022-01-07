@@ -37,7 +37,7 @@ elif n1 < n2:
     print('O SEGUNDO valor é maior')
 else:
     print('NÃO EXISTE valor maios, os dois são iguais')
-'''
+
 
 ano = int(input('Ano de nascimento: '))
 data = 2021
@@ -51,3 +51,60 @@ elif idade > 18:
     print('Seu alistamento foi em {}.'.format(data - (idade - 18)))
 else:
     print('Você tem que se alistar IMEDIATAMENTE!')
+
+
+n1 = float(input('Primeira nota: '))
+n2 = float(input('Segunda nota: '))
+m = (n1 + n2) / 2
+print('Tirando {:.1f} e {:.1f}, a média do aluno é {:.1f}'.format(n1, n2, m))
+if m >= 7:
+    print('O aluno está APROVADO.')
+elif m < 7 and m >= 5:
+    print('O aluno está em RECUPERAÇÃO.')
+else:
+    print('O aluno está REPROVADO.')
+
+
+ano = int(input('Ano de nascimento: '))
+idade = 2021 - ano
+if idade <= 9:
+    cat = 'MIRIM'
+elif idade > 9 and idade <= 14:
+    cat = 'INFANTIL'
+elif idade > 14 and idade <= 19:
+    cat = 'JUNIOR'
+elif idade > 19 and idade <= 25:
+    cat = 'SÊNIOR'
+else:
+    cat = 'MASTER'
+print('O atleta tem {} anos.'.format(idade))
+print('Classificação: {}'.format(cat))
+
+
+pri = int(input('Primeiro segmento: '))
+seg = int(input('Segundo segmento: '))
+ter = int(input('Terceiro segmento: '))
+if pri + seg < ter or seg + ter < pri or ter + pri < seg:
+    print('Os segmentos acima NÃO PODEM FORMAR um triângulo')
+elif pri != seg != ter != pri:
+    print('Os segmentos acima PODEM FORMAR um triângulo ESCALENO')
+elif pri == seg == ter:
+    print('Os segmentos acima PODEM FORMAR um triângulo EQUILÁTERO')
+elif pri == seg and pri != ter or seg == ter and seg != pri or ter == pri and ter != seg:
+    print('Os segmentos acima PODEM FORMAR um triângulo ISÓSCELES')
+'''
+
+peso = float(input('Qual é o seu peso? (Kg) '))
+altura = float(input('Qual é a sua altura? (m) '))
+imc = peso / (altura ** 2)
+print('O IMC dessa pessoa é de {:.1f}'.format(imc))
+if imc < 18.5:
+    print('Você está ABAIXO DO PESO normal.')
+elif imc >= 18.5 and imc < 25:
+    print('PARABÉNS, você está na faixa de PESO NORMAL.')
+elif imc >= 25 and imc < 30:
+    print('Você está em SOBREPESO')
+elif imc >= 30 and imc < 40:
+    print('Você está em OBESIDADE!')
+else:
+    print('Você está em OBESIDADE MÓRBIDA, cuidado!')
