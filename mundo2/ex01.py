@@ -139,16 +139,28 @@ else:
 print('Sua compra de R${:.2f} vai custar R${:.2f} no final.'.format(preço, total))
 '''
 
-print("""
-Suas opções:
+import random
+from time import sleep
+print("""Suas opções:
 [ 0 ] PEDRA
 [ 1 ] PAPEL
-[ 2 ] TESOURA
-""")
-escolha = int(input('Qual é a sua jogada? '))
-import random
+[ 2 ] TESOURA""")
+itens = ('Pedra', 'Papel', 'Tesoura')
+jogador = int(input('Qual é a sua jogada? '))
 jokenpo = random.randint(0, 2)
-if escolha == jokenpo:
-    print('EMPATE')
-elif escolha == 0 and jokenpo == 1:
-    
+sleep(1)
+print('JO')
+sleep(1)
+print('KEN')
+sleep(1)
+print('PO!  ---->  {}'.format(jokenpo))
+sleep(1)
+if jogador == jokenpo:
+    print('EMPATE!!')
+elif jogador == 0 and jokenpo == 1 or jogador == 1 and jokenpo == 2 or jogador == 2 and jokenpo == 0:
+    print('Computador GANHOU!')
+elif jokenpo == 0 and jogador == 1 or jokenpo == 1 and jogador == 2 or jokenpo == 2 and jogador == 0:
+    print('Jogador GANHOU!')
+else:
+    print('[ERRO] Informação invalida, tente novamente!')
+print('Computador jogou {} e Jogador jogou {}'.format(itens[jokenpo], itens[jogador]))
