@@ -54,3 +54,7 @@
 - Condições Aninhadas
     [elif] = else + if no python
     [in] - ex: elif <nome> in 'Algo':
+
+## Aula 2
+- Laços de Repetição
+    for c in range(0,10):
