@@ -25,6 +25,14 @@ print('Acertou com {} tentativas. Parabéns, o PC pensou no número {}!'.format(
 
 opção = 0
 while opção != 5:
+    pri = int(input('Primeiro valor: '))
+    seg = int(input('Segundo valor: '))
+    if opção == 1:
+        print('A soma entre {} + {} é {}'.format(pri, seg, (pri + seg)))
+    elif opção == 2:
+        print('O resultado entre {} x {} é {}'.format(pri, seg, (pri * seg)))
+    elif opção == 3:
+        print('Entre {} e {} o meior valor é {}'.format(pri, seg, ))
     print("""
     [ 1 ] somar
     [ 2 ] multiplicar
