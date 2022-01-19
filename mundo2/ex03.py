@@ -57,4 +57,3 @@ while opção != 5:
 print('Finalizando...')
 sleep(2.4)
 print('Fim do programa! Volte sempre!')
-print('s')
