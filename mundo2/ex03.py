@@ -89,20 +89,20 @@ tot = 0
 mais = 10
 while mais != 0:
     tot = tot + mais
-    while con<= tot:
+    while con <= tot:
         print('{} → '.format(ter), end='')
         ter = ter + raz
         con = con + 1
     print('PAUSA')
     mais = int(input('Quantos termos você quer mostrar a mais? '))
 print('Progressão finalizada com {} termos mostrados.'.format(tot))
-'''
+
 
 n = int(input('Quantos termos você quer mostrar? '))
 f = 0
-print(f, end=' → ')
 r = 1
 s = 0
+print(f, end=' → ')
 while n > 1:
     n = n - 1
     s = f
@@ -110,3 +110,71 @@ while n > 1:
     r = s
     print(f, end=' → ')
 print('Fim')
+
+#-----------------------------------------------------
+# Fibonacci
+0 = 0
+0 = 0 + 1 == 1
+1 = 0
+
+0 = 1
+1 = 1 + 0 == 1
+0 = 1
+
+1 = 1
+1 = 1 + 1 == 2
+1 = 1
+
+1 = 2
+2 = 2 + 1 == 3
+1 = 2
+
+2 = 3
+3 = 3 + 2 == 5
+2 = 3
+
+3 = 5
+5 = 5 + 3 == 8
+3 = 5
+
+5 = 8
+8 = 8 + 5 == 13
+5 = 8
+
+8 = 13
+13 = 13 + 8 == 21
+8 = 13
+#-----------------------------------------------------
+
+
+n = r = c = 0
+while n != 999:
+    n = int(input('Digite um número [999 para parar]: '))
+    r = r + n
+    c = c + 1
+    if n == 999:
+        c = c - 1
+        s = r - 999
+print('Você digitou {} números e a soma entre eles foi {}.'.format(c, s))
+'''
+
+continuar = 'S'
+contar = media = soma = maior = menor = 0
+while continuar != 'N':
+    n = int(input('Digite um número: '))
+    if contar == 1:
+        maior = menor = n
+    else:
+        if n > maior:
+            maior = n
+        if n < menor:
+            menor = n
+    contar = contar + 1
+    soma = soma + n
+    continuar = str(input('Quer continuar? [S/N]: ')).upper().strip()[0]
+    if continuar != 'S' and continuar != 'N':
+        print('Opção invalida!')
+        continuar = 'N'
+media = soma / contar
+print('''Você digitou {} números e a média foi {}
+O maior valor foi {} e o menor valor foi {}.'''.format(contar, media, maior, menor))
