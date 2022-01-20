@@ -55,9 +55,7 @@
     [elif] = else + if no python
     [in] - ex: elif <nome> in 'Algo':
 
-## Aula 2
+## Aula 2, 3 e 4
 - Laços de Repetição
-    for c in range(0, 10, 1):
-    while (enquanto)
-
-## Aula 3
+    [for] c in range(0, 10, 1):
+    [while] (enquanto):
