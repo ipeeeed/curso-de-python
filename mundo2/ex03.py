@@ -21,7 +21,7 @@ while n != pc:
         n = int(input("""Menos... Tente mais uma vez!
         Qual é seu palpite? """))
 print('Acertou com {} tentativas. Parabéns, o PC pensou no número {}!'.format(erro, pc))
-'''
+
 
 from time import sleep
 opção = 0
@@ -34,6 +34,7 @@ while opção != 5:
     [ 4 ] novos números
     [ 5 ] sair do programa""")
     opção = int(input('>>>>> Qual é a sua opção? \033[31m'))
+    print('\033[m',15*'=-=')
     sleep(2)
     if opção == 1:
         print('\033[mA soma entre \033[33m{}\033[m e \033[33m{}\033[m é \033[33m{}'.format(pri, seg, (pri + seg)))
@@ -51,9 +52,61 @@ while opção != 5:
         print('\033[mInforme os números novamente!')
         pri = int(input('Primeiro valor: \033[31m'))
         seg = int(input('\033[mSegundo valor: \033[31m'))
+    elif opção == 5:
+        print('\033[mFinalizando...')
     else:
         print('\033[mOpção inválida. Tente novamente!')
     print('\033[m',15*'=-=')
-print('Finalizando...')
 sleep(2.4)
 print('Fim do programa! Volte sempre!')
+
+
+# Fatorial
+"""
+from math import factorial
+num = int(input('Digite um número para calcular seu Fatorial: '))
+fat = factorial(num)
+print('O fatorial de {}! é {}'.format(num, fat))
+"""
+
+n = int(input('Digite um número para calcular seu Fatorial: '))
+c = n
+f = 1
+print('Calculando {}! = '.format(n), end='')
+while c > 0:
+    print('{}'.format(c), end='')
+    print(' x ' if c > 1 else ' = ', end='')
+    f = f * c
+    c = c - 1
+print('{}'.format(f))
+
+
+pri = int(input('Primeiro termo: '))
+raz = int(input('Razão da PA: '))
+ter = pri
+con = 1
+tot = 0
+mais = 10
+while mais != 0:
+    tot = tot + mais
+    while con<= tot:
+        print('{} → '.format(ter), end='')
+        ter = ter + raz
+        con = con + 1
+    print('PAUSA')
+    mais = int(input('Quantos termos você quer mostrar a mais? '))
+print('Progressão finalizada com {} termos mostrados.'.format(tot))
+'''
+
+n = int(input('Quantos termos você quer mostrar? '))
+f = 0
+print(f, end=' → ')
+r = 1
+s = 0
+while n > 1:
+    n = n - 1
+    s = f
+    f = f + r
+    r = s
+    print(f, end=' → ')
+print('Fim')
