@@ -1,9 +1,9 @@
-# Curso de Python
+# Curso de Python - Lógica de Programação
 ---
     MUNDO 1
 ---
 ## Aula 1
-- Variáveis e print
+- Variáveis simples e print
 - hashtag(#) transforma uma linha num comentário.
 - """Também transforma em comentário, mas em quebra de linhas também"""
 
@@ -57,6 +57,17 @@
 
 ## Aula 2, 3 e 4
 - Laços de Repetição
-    [for] c in range(0, 10, 1):
+    [for] c in range(0, 10, 1): ----------- range = gera uma sequência de números.
     [while] (enquanto):
-    [break] (Quebra de laço)
+    [break] (Quebra de laço "while True:")
+---
+    MUNDO 3
+---
+## Aula 1
+- Variáveis Compostas (Tuplas)
+    - len(variável) = ler quantas tuplas tem dentro de uma variável.
+    Obs: As túplas são imutáveis, ou seja, uma tupla não tem como ser redefinida.
+
+    Variável = (Túpla) [Lista] {Dicionário}
+
+    [del(variável)] = apagar a composição da variável, ou seja, variével deixa de existir.
