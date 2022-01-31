@@ -64,10 +64,29 @@
     MUNDO 3
 ---
 ## Aula 1
-- Variáveis Compostas (Tuplas)
+- Variáveis Compostas 
+    Tuplas:
     - len(variável) = ler quantas tuplas tem dentro de uma variável.
     Obs: As túplas são imutáveis, ou seja, uma tupla não tem como ser redefinida.
 
     Variável = (Túpla) [Lista] {Dicionário}
 
     [del(variável)] = apagar a composição da variável, ou seja, variével deixa de existir.
+
+    Listas:
+    [.append('')] = adiciona um item extra no final da lista.
+    [.insert(0,')] = adiciona um item extra na posição informada da lista.
+    [del] variével[3] = apaga o item da posição escolhida.
+    [variável.pop()] = apaga o item da última posição ou da posição escolhida.
+    [variável.remove('')] = elimina o valor indicado da lista.
+
+    valores = list(range(4, 11))
+    valores = 4, 5, 6, 7, 8, 9, 10
+
+    valores = [8, 2, 5, 4, 9, 3, 0]
+    valores.sort() = 0, 2, 3, 4, 5, 8, 9
+    valore.sort(reverse=True) = 9, 8, 5, 4, 3, 2, 0
+
+    len(valores) = conta a quantidade de valores da variável
+
+    
