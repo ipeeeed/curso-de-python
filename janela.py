@@ -7,7 +7,7 @@ def testado():
 from tkinter import *
 
 janela = Tk()
-janela.geometry('250x400')
+janela.geometry('250x250')
 janela.title('Programas')
 texto = Label(janela, text='Clique no botão')
 texto.grid(column=0, row=0, padx=80, pady=10)
